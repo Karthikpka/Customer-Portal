@@ -16,4 +16,4 @@ Must do to execute:
 •	Copy the hosted URL and update customerBaseUrl in customer.service.ts file in Angular App
 
 
-#Note: Due to restriction and size, unable to uploaded packages and also Web API solutions are splitted into seprate zip files.
+#Note: Due to restriction and size, unable to upload packages and also Web API solutions are splitted into seprate zip files.
