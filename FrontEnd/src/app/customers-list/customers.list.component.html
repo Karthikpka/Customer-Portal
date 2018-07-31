@@ -1,0 +1,35 @@
+﻿<div class="container">
+  <div class="row card-container">
+    <div class="col-sm-6 col-md-4 col-lg-3" *ngFor="let customer of customerList;">
+      <div class="card">
+        <div class="card-header">
+          <a>
+            {{customer.FirstName | titlecase }} {{ customer.LastName | titlecase }}
+          </a>
+        </div>
+        <div class="card-body">
+          <div class="clearfix">
+            <div class="pull-left card-body-left">
+              <a href="#">
+                <img src="assets/images/{{customer.Gender | lowercase}}.png" class="card-image" />
+              </a>
+            </div>
+            <div class="pull-left card-body-right">
+              <div class="card-body-content">
+                Contact No:
+                {{customer.Mobile}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="customerList?.length == 0">
+    No Records
+  </div>
+  <!--Need to Process Icon
+  <!--<div style="color:red" *ngIf="!customerList">
+    Server Error
+  </div>-->
+</div>
